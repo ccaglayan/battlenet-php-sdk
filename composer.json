@@ -1,0 +1,39 @@
+{
+    "name": "ccaglayan/battlenet-php-sdk",
+    "authors": [
+        {
+            "name": "Çağlar Çağlayan",
+            "email": "c.caglayan.cc@gmail.com"
+        }
+    ],
+    "description": "Library for working with the Battle.net Web APIs.",
+    "type": "library",
+    "keywords": [
+        "battlenet",
+        "battle",
+        "net",
+        "wow",
+        "worldofwarcraft",
+        "sdk",
+        "API",
+        "Battle.net",
+        "Blizzard",
+        "bnet",
+        "Diablo",
+        "Hearthstone",
+        "Overwatch",
+        "Starcraft",
+        "Warcraft"
+    ],
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BattleNetSdk\\": "src"
+        }
+    }
+}
