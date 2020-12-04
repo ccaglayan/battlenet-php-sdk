@@ -121,6 +121,10 @@ class Client
     {
         $curl = curl_init();
 
+        if($this->method == 'GET') {
+            $this->requestUrl = $this->requestUrl.'?'.http_build_query($this->sendData);
+        }
+
         curl_setopt($curl, CURLOPT_URL, $this->requestUrl);
 
         if(count($this->headerData) > 0){
